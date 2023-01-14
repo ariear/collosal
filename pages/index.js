@@ -58,6 +58,60 @@ const Home = () => {
           </div>
           <img src="/assets/team-illu.png" />
         </div>
+        <div className="bg-[#221048] font-notosans mx-24 mb-20 rounded-3xl py-20">
+            <p className="font-semibold text-[#16FCD2] text-center mb-4">GET STARTED</p>
+            <p className="font-bold text-3xl text-white text-center w-[440px] mx-auto leading-relaxed mb-20">What do you need? Choose a service that can help you</p>
+            <div className="flex items-center justify-center">
+              <div className="bg-[#3F2379] text-white w-[320px] rounded-lg py-9 px-10">
+                  <div className="flex justify-between pb-8 mb-8 border-b">
+                    <p className="font-bold">UI Design</p>
+                    <div>
+                      <p className="text-[#ffffff94] text-xs mb-1">Starting from</p>
+                      <p className="font-bold text-4xl">1200$</p>
+                    </div>
+                  </div>
+                  <ul className="font-medium text-center mb-10">
+                    <li className="mb-3">10 design pages</li>
+                    <li className="mb-3">Well-documented</li>
+                    <li className="mb-3">4 revisions</li>
+                    <li>$100/additional page</li>
+                  </ul>
+                  <button className="bg-white font-semibold rounded text-[#3F2379] w-full py-3">Detail</button>
+              </div>
+              <div className="bg-[#233679] text-white w-[320px] rounded-lg py-9 px-10 mx-7">
+                  <div className="flex justify-between pb-8 mb-8 border-b">
+                    <p className="font-bold">Development</p>
+                    <div>
+                      <p className="text-[#ffffff94] text-xs mb-1">Starting from</p>
+                      <p className="font-bold text-4xl">5000$</p>
+                    </div>
+                  </div>
+                  <ul className="font-medium text-center mb-10">
+                    <li className="mb-3">Web & Mobile</li>
+                    <li className="mb-3">Well-documented</li>
+                    <li className="mb-3">8 revisions</li>
+                    <li>$1000/additional feature</li>
+                  </ul>
+                  <button className="bg-white font-semibold rounded text-[#233679] w-full py-3">Detail</button>
+              </div>
+              <div className="bg-[#792366] text-white w-[320px] rounded-lg py-9 px-10">
+                  <div className="flex justify-between pb-8 mb-8 border-b">
+                    <p className="font-bold">Maintenance</p>
+                    <div>
+                      <p className="text-[#ffffff94] text-xs mb-1">Starting from</p>
+                      <p className="font-bold text-4xl">3000$</p>
+                    </div>
+                  </div>
+                  <ul className="font-medium text-center mb-10">
+                    <li className="mb-3">Daily backup</li>
+                    <li className="mb-3">3 hourse of maintenance</li>
+                    <li className="mb-3">Including fixing</li>
+                    <li>$50/additional hour</li>
+                  </ul>
+                  <button className="bg-white font-semibold rounded text-[#792366] w-full py-3">Detail</button>
+              </div>
+            </div>
+        </div>
       </div>
     </div>
   )
