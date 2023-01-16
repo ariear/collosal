@@ -112,6 +112,10 @@ const Home = () => {
               </div>
             </div>
         </div>
+        <div className="py-16">
+            <p className="font-semibold text-[#16FCD2] text-center mb-4">TESTIMONIAL</p>
+            <p className="font-bold text-3xl text-white text-center w-[450px] mx-auto leading-relaxed mb-20">What do our clients say that we never let down?</p>
+        </div>
       </div>
     </div>
   )
