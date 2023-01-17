@@ -1,3 +1,8 @@
+import { Swiper, SwiperSlide } from "swiper/react";
+import "swiper/css";
+import "swiper/css/pagination";
+import { Pagination, Autoplay } from "swiper";
+
 import Nav from "../components/Nav"
 
 const Home = () => {
@@ -112,9 +117,93 @@ const Home = () => {
               </div>
             </div>
         </div>
-        <div className="py-16">
+        <div className="py-16 font-notosans">
             <p className="font-semibold text-[#16FCD2] text-center mb-4">TESTIMONIAL</p>
-            <p className="font-bold text-3xl text-white text-center w-[450px] mx-auto leading-relaxed mb-20">What do our clients say that we never let down?</p>
+            <p className="font-bold text-3xl text-white text-center w-[480px] mx-auto leading-relaxed mb-20">What do our clients say that we never let down?</p>
+            <Swiper
+                slidesPerView={3}
+                spaceBetween={70}
+                pagination={{
+                  clickable: true,
+                  el: '.swiper-pagination',
+                  type: 'bullets',
+                  bulletActiveClass: 'swiper-pagination-bullet-active',
+                }}
+                autoplay={{
+                  delay: 5000,
+                  disableOnInteraction: false,
+                }}
+                modules={[Pagination,Autoplay]}
+                className="mySwiper w-[1400px]"
+            >
+              <SwiperSlide>
+              <div className="bg-[#ffffff18] text-center w-[415px] py-12 px-12 rounded">
+                <div className="relative w-max mx-auto">
+                  <img src="/avatar.png" className="mb-4" />
+                  <img src="/assets/icons/ep.png" className="bg-[#6016FC] p-2 rounded-full absolute bottom-0 right-0" />
+                </div>
+                <p className="text-white font-bold text-lg mb-2">Courtney Henry</p>
+                <p className="text-[#ffffffa1] font-medium text-sm mb-9">Biffco Enterprises Ltd.</p>
+                <p className="text-[#ffffffa1] font-medium leading-loose">"Very easy to use. I made back the purchase price in just 48 hours! It's great. It's is both attractive and highly adaptable."</p>
+              </div>
+              </SwiperSlide>
+              <SwiperSlide>
+              <div className="bg-[#ffffff18] text-center w-[415px] py-12 px-12 rounded">
+                <div className="relative w-max mx-auto">
+                  <img src="/avatar2.png" className="mb-4" />
+                  <img src="/assets/icons/ep.png" className="bg-[#6016FC] p-2 rounded-full absolute bottom-0 right-0" />
+                </div>
+                <p className="text-white font-bold text-lg mb-2">Esther Howard</p>
+                <p className="text-[#ffffffa1] font-medium text-sm mb-9">Abstergo Ltd.</p>
+                <p className="text-[#ffffffa1] font-medium leading-loose">"Your company is truly upstanding and is behind its product 100%. It's the perfect solution for our business. It has really helped our business."</p>
+              </div>
+              </SwiperSlide>
+              <SwiperSlide>
+              <div className="bg-[#ffffff18] text-center w-[415px] py-12 px-12 rounded">
+                <div className="relative w-max mx-auto">
+                  <img src="/avatar3.png" className="mb-4" />
+                  <img src="/assets/icons/ep.png" className="bg-[#6016FC] p-2 rounded-full absolute bottom-0 right-0" />
+                </div>
+                <p className="text-white font-bold text-lg mb-2">Ronald Richards</p>
+                <p className="text-[#ffffffa1] font-medium text-sm mb-9">Barone LLC.</p>
+                <p className="text-[#ffffffa1] font-medium leading-loose">"I am really satisfied with it. I'm good to go. It really saves me time and effort. It's is exactly what our business has been lacking. "</p>
+              </div>
+              </SwiperSlide>
+              <SwiperSlide>
+              <div className="bg-[#ffffff18] text-center w-[415px] py-12 px-12 rounded">
+                <div className="relative w-max mx-auto">
+                  <img src="/avatar.png" className="mb-4" />
+                  <img src="/assets/icons/ep.png" className="bg-[#6016FC] p-2 rounded-full absolute bottom-0 right-0" />
+                </div>
+                <p className="text-white font-bold text-lg mb-2">Courtney Henry</p>
+                <p className="text-[#ffffffa1] font-medium text-sm mb-9">Biffco Enterprises Ltd.</p>
+                <p className="text-[#ffffffa1] font-medium leading-loose">"Very easy to use. I made back the purchase price in just 48 hours! It's great. It's is both attractive and highly adaptable."</p>
+              </div>
+              </SwiperSlide>
+              <SwiperSlide>
+              <div className="bg-[#ffffff18] text-center w-[415px] py-12 px-12 rounded">
+                <div className="relative w-max mx-auto">
+                  <img src="/avatar2.png" className="mb-4" />
+                  <img src="/assets/icons/ep.png" className="bg-[#6016FC] p-2 rounded-full absolute bottom-0 right-0" />
+                </div>
+                <p className="text-white font-bold text-lg mb-2">Esther Howard</p>
+                <p className="text-[#ffffffa1] font-medium text-sm mb-9">Abstergo Ltd.</p>
+                <p className="text-[#ffffffa1] font-medium leading-loose">"Your company is truly upstanding and is behind its product 100%. It's the perfect solution for our business. It has really helped our business."</p>
+              </div>
+              </SwiperSlide>
+              <SwiperSlide>
+              <div className="bg-[#ffffff18] text-center w-[415px] py-12 px-12 rounded">
+                <div className="relative w-max mx-auto">
+                  <img src="/avatar3.png" className="mb-4" />
+                  <img src="/assets/icons/ep.png" className="bg-[#6016FC] p-2 rounded-full absolute bottom-0 right-0" />
+                </div>
+                <p className="text-white font-bold text-lg mb-2">Ronald Richards</p>
+                <p className="text-[#ffffffa1] font-medium text-sm mb-9">Barone LLC.</p>
+                <p className="text-[#ffffffa1] font-medium leading-loose">"I am really satisfied with it. I'm good to go. It really saves me time and effort. It's is exactly what our business has been lacking. "</p>
+              </div>
+              </SwiperSlide>
+              </Swiper>
+              <div className="swiper-pagination"></div>
         </div>
       </div>
     </div>
