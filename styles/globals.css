@@ -3,3 +3,21 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.circle{
+    border-radius: 50%;
+    position: absolute;
+    width: 46.94px;
+    height: 46.94px;
+    filter: blur(5px);
+    animation: buletanim 7s infinite both alternate;
+}
+
+@keyframes buletanim {
+    0%{
+        transform: translateY(40px);
+    }
+    100%{
+        transform: translateY(-40px);
+    }
+}
