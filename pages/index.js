@@ -2,12 +2,15 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/pagination";
 import { Pagination, Autoplay } from "swiper";
+import { MouseParallaxContainer, MouseParallaxChild } from "react-parallax-mouse";
 
 import Nav from "../components/Nav"
+import Footer from "../components/Footer";
 
 const Home = () => {
   return (
     <div>
+      <MouseParallaxContainer globalFactorX={0.1} globalFactorY={0.1}>
       <Nav />
       <div className="relative">
         <div className="font-notosans text-center py-28 mb-16">
@@ -63,6 +66,33 @@ const Home = () => {
           </div>
           <img src="/assets/team-illu.png" />
         </div>
+        <div className="font-notosans py-20 mb-14 border-t container mx-auto border-[#ffffff48]">
+        <MouseParallaxChild factorX={0.7} factorY={0.8}>
+          <div className="circle left-0 bg-pink-400"></div>
+          </MouseParallaxChild>
+        <MouseParallaxChild factorX={-0.4} factorY={-0.6}>
+          <div className="circle right-28 bg-green-400"></div>
+          </MouseParallaxChild>
+        <MouseParallaxChild factorX={0.2} factorY={0.4}>
+          <div className="circle right-0 top-36 bg-purple-700"></div>
+          </MouseParallaxChild>
+            <p className="font-semibold text-[#16FCD2] text-center mb-4">PROJECTS</p>
+            <p className="font-bold text-3xl text-white text-center w-[440px] mx-auto leading-relaxed mb-20">We have completed many amazing projects that you will not believe</p>
+            <div className="text-center flex items-center justify-center">
+              <div className="w-[450px] mr-5">
+                <img src="/assets/mobile.webp" className="rounded mb-8" />
+                <p className="font-bold text-xl text-white mb-3">The Mobile App Landing Page</p>
+                <p className="text-[#ffffffad] mb-9">A landing page for mobile app</p>
+                <button className="text-white font-medium text-sm border rounded-full py-2 px-7">Detail</button>
+              </div>
+              <div className="w-[450px]">
+                <img src="/assets/web.png" className="rounded mb-8" />
+                <p className="font-bold text-xl text-white mb-3">The Desktop App Landing Page</p>
+                <p className="text-[#ffffffad] mb-9">A landing page for desktop app</p>
+                <button className="text-white font-medium text-sm border rounded-full py-2 px-7">Detail</button>
+              </div>
+            </div>
+        </div>
         <div className="bg-[#221048] font-notosans mx-24 mb-20 rounded-3xl py-20">
             <p className="font-semibold text-[#16FCD2] text-center mb-4">GET STARTED</p>
             <p className="font-bold text-3xl text-white text-center w-[440px] mx-auto leading-relaxed mb-20">What do you need? Choose a service that can help you</p>
@@ -117,7 +147,7 @@ const Home = () => {
               </div>
             </div>
         </div>
-        <div className="py-16 font-notosans">
+        <div className="py-16 font-notosans relative mb-14">
             <p className="font-semibold text-[#16FCD2] text-center mb-4">TESTIMONIAL</p>
             <p className="font-bold text-3xl text-white text-center w-[480px] mx-auto leading-relaxed mb-20">What do our clients say that we never let down?</p>
             <Swiper
@@ -205,7 +235,9 @@ const Home = () => {
               </Swiper>
               <div className="swiper-pagination"></div>
         </div>
+        <Footer />
       </div>
+      </MouseParallaxContainer>
     </div>
   )
 }
