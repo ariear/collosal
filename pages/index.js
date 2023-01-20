@@ -4,16 +4,14 @@ import "swiper/css/pagination";
 import { Pagination, Autoplay } from "swiper";
 import { MouseParallaxContainer, MouseParallaxChild } from "react-parallax-mouse";
 
-import Nav from "../components/Nav"
-import Footer from "../components/Footer";
+import Layout from "../components/Layout";
 
 const Home = () => {
   return (
-    <div>
+    <Layout title="COLLOSAL">
       <MouseParallaxContainer globalFactorX={0.1} globalFactorY={0.1}>
-      <Nav />
       <div className="relative">
-        <div className="font-notosans text-center py-28 mb-16">
+        <div className="font-notosans text-center pt-56 mb-32">
             <p className="text-[#16FCD2] font-semibold mb-4 tracking-widest">CLIENT-DEVELOPMENT DRIVEN</p>
             <p className="text-white font-bold text-4xl tracking-wide leading-relaxed w-[620px] mx-auto mb-6">We Design. We Develop. We Ship. In The Same Day.</p>
             <p className="text-[#ffffffa9] font-medium w-[540px] leading-loose mx-auto mb-10">We are committed to not making clients wait. We will deliver the work as quickly as possible. Even on the same day. Even so, we do not reduce the quality of our work.</p>
@@ -235,10 +233,9 @@ const Home = () => {
               </Swiper>
               <div className="swiper-pagination"></div>
         </div>
-        <Footer />
       </div>
       </MouseParallaxContainer>
-    </div>
+    </Layout>
   )
 }
 
